@@ -1,0 +1,60 @@
+const int SwitchPin1 = 2;
+const int SwitchPin2 = 3;
+const int SwitchPin3 = 4;
+
+const int LEDBlack = 5;
+const int LEDBlue = 6;
+const int LEDGreen = 7;
+const int LEDCyan = 8;
+const int LEDRed = 9;
+const int LEDMagenta = 10;
+const int LEDYellow = 11;
+const int LEDWhite = 12;
+
+void setup () {
+  pinMode(SwitchPin1, INPUT_PULLUP);
+  pinMode(SwitchPin2, INPUT_PULLUP);
+  pinMode(SwitchPin3, INPUT_PULLUP);
+  pinMode(LEDBlack, OUTPUT);
+  pinMode(LEDBlue, OUTPUT);
+  pinMode(LEDGreen, OUTPUT);
+  pinMode(LEDCyan, OUTPUT);
+  pinMode(LEDRed, OUTPUT);
+  pinMode(LEDMagenta, OUTPUT);
+  pinMode(LEDYellow, OUTPUT);
+  pinMode(LEDWhite, OUTPUT);
+}
+
+void loop() {
+  bool switch1State = digitalRead(SwitchPin1);
+  bool switch2State = digitalRead(SwitchPin2);
+  bool switch3State = digitalRead(SwitchPin3);
+
+  digitalWrite(LEDRed, LOW);
+  digitalWrite(LEDGreen, LOW);
+  digitalWrite(LEDBlue, LOW);
+  digitalWrite(LEDYellow, LOW);
+  digitalWrite(LEDMagenta, LOW);
+  digitalWrite(LEDCyan, LOW);
+  digitalWrite(LEDWhite, LOW);
+  digitalWrite(LEDBlack, LOW);
+
+  if (switch1State && !switch2State && !switch3State) {
+    digitalWrite(LEDRed, HIGH);
+  } else if (!switch1State && switch2State && !switch3State) {
+    digitalWrite(LEDGreen, HIGH);
+  } else if (!switch1State && !switch2State && switch3State) {
+    digitalWrite(LEDBlue, HIGH);
+  } else if (switch1State && switch2State && !switch3State) {
+    digitalWrite(LEDYellow, HIGH);
+  } else if (switch1State && !switch2State && switch3State) {
+    digitalWrite(LEDMagenta, HIGH);
+  } else if (!switch1State && switch2State && switch3State) {
+    digitalWrite(LEDCyan, HIGH);
+  } else if (switch1State && switch2State && switch3State) {
+    digitalWrite(LEDWhite, HIGH);
+  } else {
+    digitalWrite(LEDBlack, HIGH);
+  }
+  delay(100);
+}
