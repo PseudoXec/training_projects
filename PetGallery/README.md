@@ -5,8 +5,8 @@
 ## Features
 
 - Pet Gallery: View a collection of pet photos uploaded by users.
-- Share Stories: Submit your pet’s story along with a photo.
-- Like System: Like other users' pet stories and photos.
+- Share Stories: Submit your pet’s story.
+- Like System: Like pet photos.
 - Browse & Explore: Discover a feed of pet stories.
 - Admin Panel: Admins can manage, approve, edit, or delete user-submitted stories.
 
