@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: transparent;
+    border-bottom: 0.5px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-height: 80px;
+    margin-left: 150px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+  .nav-links li {
+    margin-right: 50px;
+    float: right;
+  }
+  
+  .nav-links a {
+    font-size: 35px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: border-bottom 0.5s;
+    border-bottom: 1px solid transparent; 
+  }
+  
+  .nav-links a:hover {
+    border-bottom: 1px solid black;
+
+  }
+.cur{
+    border-bottom: 0.5px solid black;
+}
+
+.section{
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  border-bottom: 2px dashed gray;
+  padding-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.container1{
+    margin-left: 100px;
+    padding: 10px;
+    background-color: white;
+    width: 50%; 
+}
+.headings{
+    font-size: 80px;
+}
+.cont{
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    margin-right: 50p;
+
+}
+.images {
+    margin-left: auto;
+
+  }
+  
+  .images img {
+    max-width: 100%;
+    width: 700px;
+    height: 600px; 
+    transition: transform 1s ease-in-out;
+  }
+  .images img:hover{
+    transform: scale(1.1);
+  }
+
+
+.image-section {
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .image-container a {
+    margin: 0 50px;
+    text-decoration: none; 
+  }
+  
+  .image-container img {
+    max-width: 350px; /* Set an explicit width or adjust as needed */
+    width: 100%; /* Make sure the image takes the full width of its container */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+  .headings1{
+    padding: 40px;
+    font-size: 6em;
+  }
+
+  .section3 {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;  
+    border-top: 2px dashed gray;
+    padding-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .container2 {
+    margin-left: 100px;
+    background-color: white;
+    width: 50%;
+  }
+  
+  .images2 {
+    margin-left: 50px;
+  }
+  
+  .images2 img {
+    max-width: 100%;
+    width: 600px;
+    height: 550px;
+  }
+  
+  .headings2 {
+    font-size: 80px;
+  }
+  
+  .cont2 {
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    margin-right: 50px;
+  }
+  
+  .action-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 25px;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .action-button:hover {
+    transform: scale(1.1);
+  }
+
+  .section4{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 100px;
+    border-top: 2px dashed gray;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    
+  }
+  .column {
+    flex: 1; 
+    padding: 5px;
+    align-items: center;
+}
+
+.headcontact{
+    margin-top: 10px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contactinfo{
+    font-family: 'Caveat', cursive;
+    font-size: 20px ;
+}
+.paracontact{
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    margin-right: 50px;
+}
+.contactimage{
+    margin-left: 150px;
+}
+    .contactimage img{
+        max-width: 100%;
+        width: 400px;
+        height: 200px;
+
+    }
+
+.socials{
+    margin-top: 5px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.social_item{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+.social_item:hover{
+    transform: scale(1.1);
+}
+.social_item svg{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+footer{
+
+   text-align: center;
+   font-size: 20px;
+
+}
+

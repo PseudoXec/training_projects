@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  
+  nav {
+    background-color: transparent;
+    border-bottom: 0.5px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-height: 80px;
+    margin-left: 150px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+  .nav-links li {
+    margin-right: 50px;
+    float: right;
+  }
+  
+  .nav-links a {
+    font-size: 35px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: border-bottom 0.5s;
+    border-bottom: 1px solid transparent; 
+  }
+  
+  .nav-links a:hover {
+    border-bottom: 1px solid black;
+
+  }
+.cur{
+    border-bottom: 0.5px solid black;
+}
+.mhead{
+  margin-top: 90px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 35px;
+
+}
+
+
+.comment-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  font-family: 'Caveat', cursive;;
+  font-size: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: 'Caveat', cursive;;
+  font-size: 30px;
+  resize: none;
+  border: 1px solid #ccc;
+  
+}
+
+button {
+  margin-top: 5px;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s;
+  
+}
+button:hover {
+  font-weight: bold;
+  transform: scale(2);
+}
+h2 {
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 100px;
+  color: #333;
+}
+
+
+
+/* Updated styles to move the stories section to the left */
+.comments-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 90%; 
+  margin-bottom: 100px;
+}
+
+
+p {
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+strong {
+  font-family: 'Caveat', cursive;
+  color: black;
+  font-size: 50px;
+}
+
+
+.no-comments {
+  font-size: 40px;
+  color: #888;
+}
